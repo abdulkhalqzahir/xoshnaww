@@ -1,0 +1,147 @@
+/* ڕەسەن */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #921313, #204f2f, rgb(42, 26, 26));
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: linear-gradient(135deg, #666216, #4f3720, rgb(32, 26, 42));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 1200px;
+    animation: fadeIn 1s ease-in-out;
+    color: #f5f7fa;
+    box-shadow: 0px 0px 30px 0px red;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    text-align: center;
+    color: #e8dfdf;
+    margin-bottom: 20px;
+    box-shadow: 0PX 0PX 20PX 0PX rgb(167, 181, 133);
+    width: 700PX;
+    border-radius: 10PX;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #6a11cb, #2575fc);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.05); /* گەورەکردنی فۆڕمەکە */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    font-weight: bold;
+    color: #fff; /* ڕەنگی سپی بۆ نووسین */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8); /* ڕەنگی سپی کەم */
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#resultSection {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+    direction: rtl; /* خشتەکە لەلای ڕاستەوە دەست پێبکات */
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+td:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* تووڵتیپ */
+.tooltip {
+    position: absolute;
+    background-color: #6c757d;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip.hidden {
+    opacity: 0;
+}
+
+.tooltip.visible {
+    opacity: 1;
+}

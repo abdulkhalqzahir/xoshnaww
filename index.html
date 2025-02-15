@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABDULKHALQ KHOSHNAW</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>سیستەمی دابەزینی بەهای قیست SYD طریقە مجموح ارقام سنین</h1>
+        <h1>ABDULKHALQ KHOSHNAW </h1>
+        
+        <div class="content">
+            <form id="depreciationForm">
+                <label for="initialValue">کلفەی ئالەتەکە:</label>
+                <input type="number" id="initialValue" required>
+
+                <label for="salvageValue">قیمە خوردە:</label>
+                <input type="number" id="salvageValue" required>
+
+                <label for="usefulLife">عومرەکە (ساڵ):</label>
+                <input type="number" id="usefulLife" required>
+
+                <button type="submit">داگرە دەی چاوەڕێ چ دەکەی</button>
+            </form>
+
+            <div id="resultSection" class="hidden">
+                <h2>ئەنجامەکان</h2>
+                <table id="resultTable">
+                    <thead>
+                        <tr>
+                            <th>ساڵ</th>
+                            <th>کلفەی مەوجود</th>
+                            <th>محامل ئیندثار</th>
+                            <th>قستی ئیندثاری سنوی</th>
+                            <th>مخصص ئیندثار</th>
+                            <TH>قیمە دەفتەریە</TH>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- ئەنجامەکان لێرە دەردەچن -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="tooltip" class="tooltip hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
